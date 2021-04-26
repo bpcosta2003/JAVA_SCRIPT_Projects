@@ -1,0 +1,101 @@
+body {
+  font-family: "Roboto Mono", monospace;
+  text-align: center;
+  background-image: url("https://img.freepik.com/vetores-gratis/sala-de-cinema-ou-teatro-de-cinema-para-o-filme-premier-poster-design-com-cadeiras-dentro-de-quarto_1017-8728.jpg?size=626&ext=jpg");
+  background-color: #000000;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.page-title {
+  color: #ffffff;
+  margin: 0 0 5px;
+}
+
+.page-subtitle {
+  color: #ffffff;
+  margin-top: 5px;
+  font-size: 2rem;
+}
+
+.page-logo {
+  width: 200px;
+}
+
+.alura-logo {
+  width: 200px;
+  position: absolute;
+  top: 40px;
+  right: 10px;
+}
+
+a {
+  font-size: larger;
+  text-decoration: none;
+  color: white;
+}
+
+.filmes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.filmes img {
+  width: 20rem;
+}
+
+p {
+  padding: 2rem;
+  color: white;
+  font-size: 1rem;
+  background-color: rgba(68, 68, 68, 0.356);
+}
+
+img {
+  width: 40rem;
+  padding: 2rem;
+}
+
+#listaFilmes img {
+  width: 40rem;
+  margin: 10px;
+}
+
+.form-wrapper {
+  margin: 0 0 15px;
+}
+
+.form-wrapper input {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 15px;
+  width: 16rem;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+.form-wrapper button {
+  border: 0;
+  color: #ffffff;
+  background: #da1e26;
+  font-weight: bold;
+  padding: 15px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-wrapper button:hover {
+  opacity: 0.8;
+}
