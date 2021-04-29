@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  background-color: grey;
+  height: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+#senha {
+  padding-top: 20rem;
+}
+
+input {
+  display: block;
+  margin: 2rem auto;
+  padding: 10px 15px;
+  width: 16rem;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+button {
+  border: 0;
+  color: #ffffff;
+  background: #da1e26;
+  font-weight: bold;
+  padding: 15px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+h2 {
+  color: white;
+}

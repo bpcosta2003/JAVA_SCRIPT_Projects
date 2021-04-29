@@ -4,7 +4,6 @@ var Bruno = {
   empates: 0,
   derrotas: 0,
   pontos: 0,
-  zerar: 0,
 };
 
 var Gabriel = {
@@ -13,7 +12,6 @@ var Gabriel = {
   empates: 0,
   derrotas: 0,
   pontos: 0,
-  zerar: 0,
 };
 var Guilherme = {
   nome: "Guilherme",
@@ -21,7 +19,6 @@ var Guilherme = {
   empates: 0,
   derrotas: 0,
   pontos: 0,
-  zerar: 0,
 };
 
 function calcularPontos(jogador) {
@@ -77,22 +74,12 @@ function adicionarDerrota(i) {
 }
 
 function zerarTabela() {
-  var html = "";
   for (var i = 0; i < jogadores.length; i++) {
-    html += "<tr><td>" + jogadores[i].nome + "</td>";
-    html += "<td>" + jogadores[i].zerar + "</td>";
-    html += "<td>" + jogadores[i].zerar + "</td>";
-    html += "<td>" + jogadores[i].zerar + "</td>";
-    html += "<td>" + jogadores[i].zerar + "</td>";
-    html +=
-      "<td><button onClick='adicionarVitoria(" + i + ")'>Vitória</button></td>";
-    html +=
-      "<td><button onClick='adicionarEmpate(" + i + ")'>Empate</button></td>";
-    html +=
-      "<td><button onClick='adicionarDerrota(" +
-      i +
-      ")'>Derrota</button></td></tr>";
+    jogadores[i].vitorias = 0;
+    jogadores[i].empates = 0;
+    jogadores[i].derrotas = 0;
+    jogadores[i].pontos = 0;
   }
-  var tabelaJogadores = document.getElementById("tabelaJogadores");
-  tabelaJogadores.innerHTML = html;
+
+  exibirJogadoresNaTela(jogadores);
 }
