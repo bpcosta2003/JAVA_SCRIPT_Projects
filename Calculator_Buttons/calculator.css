@@ -1,0 +1,235 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  text-align: center;
+  padding: 10rem;
+  border-radius: 0px;
+  background: linear-gradient(145deg, #cacaca, #f0f0f0);
+  box-shadow: 25px 25px 60px #9f9f9f, -25px -25px 60px #ffffff;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+#input3 {
+  margin-bottom: 20px;
+  border: 0px solid transparent;
+  border-radius: 0px;
+
+  background: #e0e0e0;
+  box-shadow: inset 5px 5px 10px #b5b5b5, inset -5px -5px 10px #ffffff;
+}
+
+.value label {
+  display: grid;
+  margin: 0 auto;
+  padding: 10px 15px;
+  width: 16rem;
+  padding: 20px;
+}
+
+.op {
+  border: 0;
+  color: #ffffff;
+  background: #979797;
+  font-weight: bold;
+  padding: 15px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 5rem;
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+  background: #8b8b8b;
+  box-shadow: inset 5px 5px 10px #b1b1b131, inset -5px -5px 10px #505050d5;
+}
+
+.op.c {
+  border: 0;
+  color: #ffffff;
+  background: #ce3232;
+  font-weight: bold;
+  padding: 15px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 5rem;
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+  background: #b92323;
+  box-shadow: inset 5px 5px 10px #8a2020, inset -5px -5px 10px #832222;
+}
+.op.a {
+  border: 0;
+  color: #ffffff;
+  background: #3269ce;
+  font-weight: bold;
+  padding: 15px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 5rem;
+  margin: auto;
+
+  margin-bottom: 20px;
+  background: #3269ce;
+  box-shadow: inset 5px 5px 10px #154183, inset -5px -5px 10px #0a4991;
+}
+.op.p {
+  border: 0;
+  color: #ffffff;
+  background: #8832ce;
+  font-weight: bold;
+  padding: 15px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 5rem;
+  margin: auto;
+
+  margin-bottom: 20px;
+  background: #8832ce;
+  box-shadow: inset 5px 5px 10px #70159b, inset -5px -5px 10px #680675;
+}
+.op.b {
+  border: 0;
+  color: #ffffff;
+  background: #ce7032;
+  font-weight: bold;
+  padding: 15px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 5rem;
+  margin: auto;
+
+  margin-bottom: 20px;
+  background: #ce7032;
+  box-shadow: inset 5px 5px 10px #be710b, inset -5px -5px 10px #91520a;
+}
+
+.igual {
+  border: 0;
+  color: #ffffff;
+  background: #2e2e2e;
+  font-weight: bold;
+  padding: 15px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 5rem;
+  display: block;
+  margin: auto;
+
+  margin-bottom: 20px;
+  background: #1a1a1a;
+  box-shadow: inset 5px 5px 10px #000000, inset -5px -5px 10px #000000;
+}
+
+.nums {
+  padding: 1rem;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+#resultado,
+#resultado2,
+#resultado3 {
+  font-size: 2rem;
+  background: #e0e0e0;
+  box-shadow: inset 5px 5px 10px #b5b5b5, inset -5px -5px 10px #ffffff;
+  width: 16.2rem;
+  display: block;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.calculos {
+  position: relative;
+  display: grid;
+  grid-template-columns: 7rem 7rem 7rem;
+  justify-content: center;
+}
+
+.operacoes {
+  position: relative;
+  display: grid;
+}
+
+.numeros {
+  position: relative;
+  display: grid;
+  grid-template-columns: 7rem 7rem 7rem;
+  justify-content: center;
+}
+
+.numeros .value {
+  grid-column: span 3;
+  height: 100px;
+  text-align: right;
+  padding: 10px;
+  font-size: 30px;
+}
+
+.botnum {
+  border: 0;
+  color: #ffffff;
+  background: #5c5c5c;
+  font-weight: bold;
+  padding: 15px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 5rem;
+  display: block;
+  margin: auto;
+
+  margin-bottom: 20px;
+  background: #424242;
+  box-shadow: inset 5px 5px 10px #1a1a1aa1, inset -5px -5px 10px #bebebe00;
+}
+
+#input1num,
+#input2num,
+#input3num {
+  margin-bottom: 20px;
+  border: 0px solid transparent;
+  border-radius: 0px;
+  padding: 5px 10px;
+  background: #e0e0e0;
+  box-shadow: inset 5px 5px 10px #b5b5b5, inset -5px -5px 10px #ffffff;
+}
+
+#buttonNum {
+  border: 0;
+  color: #ffffff;
+  background: #2e2e2e;
+  font-weight: bold;
+  padding: 15px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 12rem;
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+  background: #1a1a1a;
+  box-shadow: inset 5px 5px 10px #000000, inset -5px -5px 10px #000000;
+}
