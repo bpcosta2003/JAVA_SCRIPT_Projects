@@ -59,6 +59,35 @@ input {
   transition: 0.3s;
   width: 100%;
 }
+.blue {
+  border: 0;
+  color: #ffffff;
+  background: #275cce;
+  font-weight: bold;
+  padding: 15px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.orange {
+  border: 0;
+  color: #ffffff;
+  background: #db621c;
+  font-weight: bold;
+  padding: 15px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 100%;
+}
 
 .lista {
   margin: 0 0 15px;
@@ -179,4 +208,10 @@ select {
 
 #mediaFinal {
   font-size: 20px;
+}
+
+#fechamentoLabelId {
+  background-color: rgba(128, 128, 128, 0.397);
+  padding: 2rem;
+  width: 655px;
 }
