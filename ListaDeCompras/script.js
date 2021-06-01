@@ -73,7 +73,18 @@ function resetar() {
       "R$" +
       "</option>";
   }
+  for (var i = 0; i < tamanhoLista; i++) {
+    var htmlFinalTable = "<tr class='valuesitms'>";
 
+    htmlFinalTable += "<td >" + listaCompras[i].nomeItem + "</td>";
+    htmlFinalTable += "<td >" + listaCompras[i].quantidade + "</td>";
+    htmlFinalTable += "<td >" + listaCompras[i].preco + "</td>";
+
+    htmlFinalTable += "</tr>";
+  }
+
+  $(".valuesitms").html("");
+  $("#tabelaItensId").append(htmlFinalTable);
   $("#meuSelect").html(htmlFinal);
 }
 
