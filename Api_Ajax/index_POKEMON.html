@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-request"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>API / AJAX - POKEMON</title>
+    <script src="script_POKEMON.js" defer></script>
+    <link rel="stylesheet" href="style_POKEMON.css" />
+  </head>
+
+  <body>
+    <h2>API - Pokemon</h2>
+
+    <div class="btn">
+      <button id="botaoBuscarPersonagemAleatorio">
+        Buscar Pokemon Aleatório
+      </button>
+      <h3>Pokemon escolhido : <label id="personagemAleatorioId"></label></h3>
+      <h3>DEFAULT / SHINY</h3>
+      <div id="personagemImgId"></div>
+    </div>
+
+    <div class="btn">
+      <input id="buscaPokemonPorNomePersonagemId" />
+      <button id="botaoBuscaPokemonId">Buscar Pokemon por nome</button>
+
+      <h3 class="h3txt">Pokemon : <label id="labelPokemonDeId"></label></h3>
+
+      <div id="personagemImgId2"></div>
+    </div>
+
+    <div class="tabelas">
+      <table id="tabelaPokemonId" border="1">
+        <tr>
+          <th>HP</th>
+          <th>ATTACK</th>
+          <th>DEFENSE</th>
+          <th>SPECIAL ATTACK</th>
+          <th>SPECIAL DEFENSE</th>
+          <th>SPEED</th>
+        </tr>
+      </table>
+    </div>
+    <br />
+    <br />
+  </body>
+</html>

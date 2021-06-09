@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("Imagens/patrick-fore-mMcqMYJfopo-unsplash.jpg");
+  background-size: cover;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  text-transform: uppercase;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 3rem;
+}
+
+.btn {
+  text-align: center;
+}
+
+#botaoBuscarPersonagemAleatorio,
+#botaoBuscaFilmeId {
+  margin: 20px;
+  padding: 2rem;
+  background-color: rgba(24, 21, 21, 0.219);
+  border: 1px solid transparent;
+  color: white;
+  text-transform: uppercase;
+  display: block;
+  margin: auto;
+  -webkit-box-shadow: inset 16px -9px 31px -2px rgba(0, 0, 0, 0.199),
+    16px 7px 50px 8px rgba(0, 0, 0, 0.788);
+  box-shadow: inset 16px -9px 31px -2px rgba(0, 0, 0, 0.199),
+    16px 7px 50px 8px rgba(0, 0, 0, 0.788);
+}
+
+#buscaFilmePorNomePersonagemId {
+  margin: 20px;
+  padding: 2rem;
+  border: 1px solid transparent;
+  -webkit-box-shadow: inset 16px -9px 31px -2px rgba(0, 0, 0, 0.918),
+    16px 7px 50px 8px rgba(0, 0, 0, 0.788);
+  box-shadow: inset 16px -9px 31px -2px rgba(0, 0, 0, 0.274),
+    16px 7px 50px 8px rgba(0, 0, 0, 0.884);
+}
+
+#buscaFilmePorNomePersonagemId:focus {
+  background-color: rgba(228, 228, 228, 0.671);
+}
+
+h3 {
+  text-align: center;
+  padding: 2rem;
+  text-transform: uppercase;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+}
+
+table {
+  border: 1px solid transparent;
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+
+th {
+  color: rgb(40, 125, 204);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+tr {
+  background-color: #ffffff00;
+  color: rgb(0, 0, 0);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  background-color: rgba(128, 128, 128, 0.137);
+}
