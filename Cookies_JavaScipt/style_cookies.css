@@ -1,0 +1,17 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+}
+
+h2 {
+  padding: 2rem;
+}
+
+.form-check {
+  text-align: right;
+}

@@ -31,6 +31,20 @@ input {
   border-radius: 5px;
 }
 
+input {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 15px;
+  width: 16rem;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+#labelDivId > label {
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
 .green {
   border: 0;
   color: #ffffff;
@@ -89,6 +103,22 @@ input {
   width: 100%;
 }
 
+.purple {
+  border: 0;
+  color: #ffffff;
+  background: #5f1cdb;
+  font-weight: bold;
+  padding: 15px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 100%;
+}
+
+#inputDivId,
 .lista {
   margin: 0 0 15px;
   text-align: center;
@@ -214,4 +244,18 @@ select {
   background-color: rgba(128, 128, 128, 0.397);
   padding: 2rem;
   width: 655px;
+}
+
+#modes {
+  text-align: left;
+}
+
+.form-check {
+  text-align: right;
+  padding: 2rem;
+  margin: 2rem;
+}
+
+#icon {
+  font-size: 2rem;
 }
