@@ -241,9 +241,8 @@ select {
 }
 
 #fechamentoLabelId {
-  background-color: rgba(128, 128, 128, 0.397);
+  background-color: rgba(128, 128, 128, 0.26);
   padding: 2rem;
-  width: 655px;
 }
 
 #modes {
