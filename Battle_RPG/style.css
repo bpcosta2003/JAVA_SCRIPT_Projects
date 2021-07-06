@@ -1,0 +1,64 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-size: cover;
+  background-color: rgba(128, 128, 128, 0.432);
+}
+
+.accordion {
+  box-shadow: 10px 15px 15px 10px rgba(20, 20, 20, 0.178);
+  margin-bottom: 5rem;
+}
+
+h1 {
+  padding: 2rem;
+}
+
+.btn-link {
+  text-decoration: none;
+  color: black;
+  font-size: 1em;
+}
+
+.atackBtn {
+  margin-bottom: 1rem;
+}
+
+.botaoUpdate {
+  background-color: rgba(0, 0, 0, 0.979);
+  color: white;
+  border: 1px solid transparent;
+}
+.botaoUpdate:hover {
+  background-color: rgba(0, 0, 0, 0.616);
+  color: rgb(255, 255, 255);
+  border: 1px solid transparent;
+}
+.botaoUpdate:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: rgba(0, 0, 0, 0.616);
+  color: rgb(255, 255, 255);
+  border: 1px solid transparent;
+}
+
+.botaoUpdate[disabled] {
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: rgba(43, 43, 43, 0.568);
+  color: rgb(255, 255, 255);
+  border: 1px solid transparent;
+}
+
+#imagemPersonagemId {
+  width: 64px;
+  height: 64px;
+}
+#imagemInimigoId {
+  width: 64px;
+  height: 64px;
+}
