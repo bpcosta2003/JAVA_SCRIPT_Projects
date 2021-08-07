@@ -49,7 +49,7 @@
   </head>
   <body>
     <div class="container">
-      <h1 class="d-flex justify-content-center">BATALHA RPG</h1>
+      <h1 class="d-flex justify-content-center">RPG BATTLE</h1>
 
       <div class="accordion" id="accordionExample">
         <div class="card">
@@ -65,7 +65,7 @@
                 aria-expanded="true"
                 aria-controls="collapseOne"
               >
-                PERSONAGENS
+                CHARACTERS
               </button>
             </h5>
           </div>
@@ -84,17 +84,17 @@
               <table class="table table-bordered table-light">
                 <thead>
                   <tr>
-                    <th>Classe</th>
+                    <th>CLASS</th>
 
-                    <th>Vida</th>
+                    <th>LIFE</th>
 
-                    <th>Dano</th>
+                    <th>DAMAGE</th>
                   </tr>
                 </thead>
 
                 <tbody>
                   <tr>
-                    <td>Guerreiro</td>
+                    <td>WARRIOR</td>
 
                     <td>
                       <label id="GuerreiroVidaId">50</label>
@@ -120,7 +120,7 @@
                   </tr>
 
                   <tr>
-                    <td>Arqueiro</td>
+                    <td>ARCHER</td>
 
                     <td>
                       <label id="ArqueiroVidaId">30</label>
@@ -146,7 +146,7 @@
                   </tr>
 
                   <tr>
-                    <td>Mago</td>
+                    <td>WIZARD</td>
 
                     <td>
                       <label id="MagoVidaId">20</label>
@@ -173,7 +173,7 @@
                 </tbody>
               </table>
 
-              <label>Pontos de Evolução : </label>
+              <label>Evolution points : </label>
 
               <label id="pontosEvolucaoid">1</label>
             </div>
@@ -195,7 +195,7 @@
                 aria-expanded="true"
                 aria-controls="batalhaCard"
               >
-                BATALHA
+                BATTLE
               </button>
             </h5>
           </div>
@@ -213,13 +213,13 @@
             <form>
               <div class="form-group pt-3">
                 <select class="form-select" id="selecaoInimigosId">
-                  <option selected disabled>Selecione seus inimigos</option>
+                  <option selected disabled>Select your enemy</option>
 
                   <option value="0">Orcs</option>
 
-                  <option value="1">Mortos-vivos</option>
+                  <option value="1">Zombie</option>
 
-                  <option value="2">Demônios</option>
+                  <option value="2">Monster</option>
                 </select>
 
                 <!--/ Botão Iniciar Batalha /-->
@@ -229,7 +229,7 @@
                   class="btn btn-danger mt-3 mb-3 form-control"
                   onclick="iniciarBatalha()"
                 >
-                  INICIAR BATALHA
+                  START BATTLE
                 </button>
               </div>
             </form>
@@ -243,7 +243,7 @@
                 <div class="input-group">
                   <div class="input-group-prepend">
                     <label class="input-group-text" for="inputGroupSelect01"
-                      >Personagem</label
+                      >Characters</label
                     >
                   </div>
 
@@ -254,15 +254,13 @@
                     onchange="selecionarPersonagem()"
                     id="personagemEscolhidoId"
                   >
-                    <option selected disabled>
-                      Selecione seu personagem...
-                    </option>
+                    <option selected disabled>Select your character...</option>
 
-                    <option value="0">Guerreiro</option>
+                    <option value="0">Warrior</option>
 
-                    <option value="1">Arqueiro</option>
+                    <option value="1">Archer</option>
 
-                    <option value="2">Mago</option>
+                    <option value="2">Wizard</option>
                   </select>
                 </div>
 
@@ -277,13 +275,13 @@
                 <table class="table table-bordered table-light mt-2">
                   <tbody>
                     <tr>
-                      <th scope="row">Vida</th>
+                      <th scope="row">Life</th>
 
                       <td><label id="vidaPersonagemId">0</label></td>
                     </tr>
 
                     <tr>
-                      <th scope="row">Dano</th>
+                      <th scope="row">Damage</th>
 
                       <td><label id="danoPersonagemId">0</label></td>
                     </tr>
@@ -299,7 +297,7 @@
                   class="btn btn-primary form-control mt-3 atackBtn"
                   onclick="Atacar()"
                 >
-                  ATACAR
+                  ATACK
                 </button>
               </div>
 
@@ -309,7 +307,7 @@
                 <div class="input-group">
                   <div class="input-group-prepend">
                     <label class="input-group-text" for="inputGroupSelect01"
-                      >Inimigo</label
+                      >Enemy</label
                     >
                   </div>
 
@@ -320,7 +318,7 @@
                     id="inimigosEscolhidosId"
                     onchange="atualizarDadosAlvo()"
                   >
-                    <option selected>Selecione seus inimigos...</option>
+                    <option selected>Select your enemy...</option>
                   </select>
                 </div>
 
@@ -335,13 +333,13 @@
                 <table class="table table-bordered table-light mt-2">
                   <tbody>
                     <tr>
-                      <th scope="row">Vida</th>
+                      <th scope="row">Life</th>
 
                       <td><label id="vidaInimigoId">0</label></td>
                     </tr>
 
                     <tr>
-                      <th scope="row">Dano</th>
+                      <th scope="row">Damage</th>
 
                       <td><label id="danoInimigoId">0</label></td>
                     </tr>
@@ -351,7 +349,7 @@
             </div>
             <!--/ Texto de resultado do ataque /-->
 
-            <label>Resultado : </label> <label id="resultadoId"></label>
+            <label>Result : </label> <label id="resultadoId"></label>
 
             <!--/ Botão Saquear /-->
 
@@ -363,7 +361,7 @@
                 class="btn btn-warning form-control mb-3 mt-3"
                 disabled
               >
-                SAQUEAR
+                LOOT
               </button>
             </div>
 

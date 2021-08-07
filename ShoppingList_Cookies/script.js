@@ -103,7 +103,7 @@ function remover() {
 }
 
 function fecharCompra() {
-  var htmlFecharCompra = "Você comprou : ";
+  var htmlFecharCompra = "You bought : ";
 
   var soma = 0;
 
@@ -113,7 +113,7 @@ function fecharCompra() {
     soma += listaCompras[i].quantidade * listaCompras[i].preco;
   }
 
-  htmlFecharCompra += "Total : " + soma + "R$.";
+  htmlFecharCompra += "Total : " + soma + "$.";
 
   $("#fechamentoLabelId").text(htmlFecharCompra);
 }
@@ -203,8 +203,8 @@ function changeBackground() {
 
 function SetLightMode() {
   $("#background").css("background-color", "white");
-  $("#background").css("color", "black");
-  $("#tabelaItensId").css("color", "black");
+  $("#background").css("color", "#011323");
+  $("#tabelaItensId").css("color", "#011323");
   var sun = "";
   sun +=
     "<label id='icon' class='form-check-label' for='flexSwitchCheckDefault'><i class='bi bi-brightness-high'></i></label>";
@@ -214,7 +214,7 @@ function SetLightMode() {
 }
 
 function SetDarkMode() {
-  $("#background").css("background-color", "black");
+  $("#background").css("background-color", "#011323");
   $("#background").css("color", "white");
   $("#tabelaItensId").css("color", "white");
   var moon = "";

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Document</title>
+    <title>Shopping List - Cookies</title>
 
     <link rel="stylesheet" href="style.css" />
     <link
@@ -39,7 +39,7 @@
 
   <body id="background" style="background-color: rgb(209, 209, 209)">
     <div class="container">
-      <h2>LISTA DE COMPRAS</h2>
+      <h2>Shopping List</h2>
 
       <div id="checkedButton" class="form-check form-switch">
         <input
@@ -69,12 +69,12 @@
           />
 
           <button class="purple" id="buttonEntrarId" onclick="entrar()">
-            Entrar
+            Log in
           </button>
         </div>
 
         <div id="labelDivId">
-          <label for="welcome">BEM VINDO : </label>
+          <label for="welcome">Welcome : </label>
           <label id="labelId"></label>
         </div>
       </div>
@@ -86,7 +86,7 @@
           class="form-control"
           aria-label="Sizing example input"
           aria-describedby="inputGroup-sizing-lg"
-          placeholder="Nome do Item :"
+          placeholder="ITEM NAME :"
           required
         />
         <input
@@ -95,7 +95,7 @@
           class="form-control"
           aria-label="Sizing example input"
           aria-describedby="inputGroup-sizing-lg"
-          placeholder="Quantidade :"
+          placeholder="QUANTITY :"
           required
         />
         <input
@@ -104,37 +104,33 @@
           class="form-control"
           aria-label="Sizing example input"
           aria-describedby="inputGroup-sizing-lg"
-          placeholder="Preço do Item :"
+          placeholder="ITEM PRICE :"
           required
         />
         <button id="adicionarItem" class="green" onclick="adicionar()">
-          ADICIONAR ITEM
+          ADD ITEM
         </button>
         <select
           class="form-select form-select-lg mb-3"
           aria-label=".form-select-lg example"
           id="meuSelect"
         ></select>
-        <button class="red" onclick="remover()">
-          REMOVER ITEM SELECIONADO
-        </button>
+        <button class="red" onclick="remover()">REMOVE SELECTED ITEM</button>
         <table class="table table-hover" id="tabelaItensId">
           <tr>
-            <th>Nome</th>
+            <th>NAME</th>
 
-            <th>Quantidade</th>
+            <th>QUANTITY</th>
 
-            <th>Preço</th>
+            <th>PRICE</th>
           </tr>
         </table>
 
-        <button class="blue" onclick="fecharCompra()">Fechar Compra</button>
+        <button class="blue" onclick="fecharCompra()">FINISH SHOPPING</button>
 
         <label id="fechamentoLabelId"></label>
 
-        <button class="orange" onclick="refazerCompra()">
-          Refazer Compras
-        </button>
+        <button class="orange" onclick="refazerCompra()">CLEAN SHOPPING</button>
       </div>
     </div>
   </body>

@@ -12,9 +12,9 @@ function zerar() {
 function aleatorio() {
   var htmlInputs = "";
   htmlInputs +=
-    "<input id='input1num' style='margin: auto; margin-top:0.5rem' placeholder='Coloque o 1.o valor ...'><br><br>";
+    "<input id='input1num' style='margin: auto; margin-top:0.5rem' placeholder='Put the first value ...'><br><br>";
   htmlInputs +=
-    "<input id='input2num' style='margin: auto' placeholder='Coloque o 2.o valor ...'><br><br>";
+    "<input id='input2num' style='margin: auto' placeholder='Put the second value ...'><br><br>";
   htmlInputs +=
     "<button id='buttonNum' style='margin: auto' onclick='resultadoAleatorio()'>GERAR NÚMERO<br>";
   document.getElementById("inputs").innerHTML = htmlInputs;
@@ -40,12 +40,12 @@ function resultadoAleatorio() {
 function pitagoras() {
   var htmlInputs = "";
   htmlInputs +=
-    "<input id='input1num' style='margin: auto; margin-top:0.5rem' placeholder='Coloque o 1.o valor...'><br><br>";
+    "<input id='input1num' style='margin: auto; margin-top:0.5rem' placeholder='Put the first value...'><br><br>";
   htmlInputs +=
-    "<input id='input2num' style='margin: auto' placeholder='Coloque o 2.o valor...'><br><br>";
+    "<input id='input2num' style='margin: auto' placeholder='Put the second value...'><br><br>";
 
   htmlInputs +=
-    "<button id='buttonNum' style='margin: auto' onclick='resultadoPitagoras()'>GERAR HIPOTENUSA<br>";
+    "<button id='buttonNum' style='margin: auto' onclick='resultadoPitagoras()'>GENERATE HYPOTENUSE <br>";
   document.getElementById("inputs").innerHTML = htmlInputs;
 }
 
@@ -60,14 +60,14 @@ function resultadoPitagoras() {
 function bhaskara() {
   var htmlInputs = "";
   htmlInputs +=
-    "<input id='input1num' style='margin: auto; margin-top:0.5rem' placeholder='Coloque o valor de A ...'><br><br>";
+    "<input id='input1num' style='margin: auto; margin-top:0.5rem' placeholder='Put A value ...'><br><br>";
   htmlInputs +=
-    "<input id='input2num' style='margin: auto' placeholder='Coloque o valor de B ...'><br><br>";
+    "<input id='input2num' style='margin: auto' placeholder='Put B value ...'><br><br>";
   htmlInputs +=
-    "<input id='input3num' style='margin: auto' placeholder='Coloque o valor de C ...'><br><br>";
+    "<input id='input3num' style='margin: auto' placeholder='Put C value ...'><br><br>";
 
   htmlInputs +=
-    "<button id='buttonNum' style='margin: auto' onclick='resultadoBhaskara()'>GERAR BHASKARA<br>";
+    "<button id='buttonNum' style='margin: auto' onclick='resultadoBhaskara()'>GENERATE BHASKARA<br>";
   document.getElementById("inputs").innerHTML = htmlInputs;
 }
 
@@ -82,7 +82,7 @@ function resultadoBhaskara() {
 
   if (delta < 0) {
     document.getElementById("resultado").innerHTML =
-      "Não possui raízes reais... Delta = " + delta;
+      "Dont have real roots... Delta = " + delta;
   } else {
     var bhask1 = (-b + Math.sqrt(delta)) / (2 * a);
     var bhask2 = (-b - Math.sqrt(delta)) / (2 * a);

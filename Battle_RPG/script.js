@@ -7,9 +7,9 @@ var danoArqueiro = 20;
 var vidaMago = 20;
 var danoMago = 30;
 
-var imagemGuerreiro = "Imagens/Guerreiro.png";
-var imagemArqueiro = "Imagens/Arqueiro.png";
-var imagemMago = "Imagens/Mago.png";
+var imagemGuerreiro = "Imagens/Warrior.png";
+var imagemArqueiro = "Imagens/Archer.png";
+var imagemMago = "Imagens/Wizard.png";
 
 function Personagem(classe, vida, dano) {
   this.classe = classe;
@@ -23,13 +23,9 @@ var personagemMago;
 var personagens;
 
 function criarPersonagens() {
-  personagemGuerreiro = new Personagem(
-    "Guerreiro",
-    vidaGuerreiro,
-    danoGuerreiro
-  );
-  personagemArqueiro = new Personagem("Arqueiro", vidaArqueiro, danoArqueiro);
-  personagemMago = new Personagem("Mago", vidaMago, danoMago);
+  personagemGuerreiro = new Personagem("Warrior", vidaGuerreiro, danoGuerreiro);
+  personagemArqueiro = new Personagem("Archer", vidaArqueiro, danoArqueiro);
+  personagemMago = new Personagem("Wizard", vidaMago, danoMago);
   personagens = [personagemGuerreiro, personagemArqueiro, personagemMago];
 }
 
@@ -117,14 +113,14 @@ function criarInimigos() {
   var orcChefe = new Inimigo("Orc Chefe", 50, 10);
   var orcs = [orc, orcShaman, orcChefe];
 
-  var esqueleto = new Inimigo("Esqueleto", 10, 20);
-  var zumbi = new Inimigo("Zumbi", 20, 30);
-  var zumbiChefe = new Inimigo("Zumbi Chefe", 30, 50);
+  var esqueleto = new Inimigo("Skeleton", 10, 20);
+  var zumbi = new Inimigo("Zombie", 20, 30);
+  var zumbiChefe = new Inimigo("Zombie Boss", 30, 50);
   var zombies = [esqueleto, zumbi, zumbiChefe];
 
   var imp = new Inimigo("Imp", 20, 20);
-  var demon = new Inimigo("Demônio", 30, 30);
-  var bossDemon = new Inimigo("Demônio Chefe", 50, 40);
+  var demon = new Inimigo("Monster", 30, 30);
+  var bossDemon = new Inimigo("Monster Boss", 50, 40);
   var demons = [imp, demon, bossDemon];
 
   inimigos = [orcs, zombies, demons];
@@ -194,14 +190,14 @@ function Atacar() {
   if (personagens[indexPersonagem].vida <= 0) {
     htmlFinal =
       personagens[indexPersonagem].classe +
-      " está morto, ataque com outro personagem";
+      " is dead, attack with another character";
   }
 
   /// Inimigo escolhido esta morto?
   else if (inimigos[indexGrupoInimigos][indexInimigoAlvo].vida <= 0) {
     htmlFinal =
       inimigos[indexGrupoInimigos][indexInimigoAlvo].nome +
-      " já esta morto, ataque outro inimigo";
+      " already dead attack another enemy";
   }
 
   /// Posso atacar normalmente
@@ -215,15 +211,15 @@ function Atacar() {
 
     htmlFinal =
       inimigos[indexGrupoInimigos][indexInimigoAlvo].nome +
-      " recebeu " +
+      " has received " +
       personagens[indexPersonagem].dano +
-      " de dano. ";
+      " of damage. ";
 
     /// Verifica inimigo morreu, se sim já cria uma mensagem
 
     if (inimigos[indexGrupoInimigos][indexInimigoAlvo].vida <= 0) {
       htmlFinal +=
-        inimigos[indexGrupoInimigos][indexInimigoAlvo].nome + " morreu. ";
+        inimigos[indexGrupoInimigos][indexInimigoAlvo].nome + " died. ";
 
       inimigos[indexGrupoInimigos][indexInimigoAlvo].vida = 0;
     }
@@ -240,16 +236,16 @@ function Atacar() {
 
       htmlFinal +=
         personagens[indexPersonagem].classe +
-        " recebeu " +
+        " has received " +
         inimigos[indexGrupoInimigos][indexInimigoAlvo].dano +
-        " de dano. ";
+        " of damage. ";
 
       /// Verifica se personagem morreu, se sim cria mensagem
 
       if (personagens[indexPersonagem].vida <= 0) {
         personagens[indexPersonagem].vida = 0;
 
-        htmlFinal += personagens[indexPersonagem].classe + " morreu. ";
+        htmlFinal += personagens[indexPersonagem].classe + " died. ";
       }
     }
 
@@ -258,7 +254,7 @@ function Atacar() {
     var todosInimigosEstaoMortos = verificaTodosInimigosMortos();
 
     if (todosInimigosEstaoMortos) {
-      htmlFinal += "Todos inimigos mortos, pode saquear os pontos de evolução.";
+      htmlFinal += "All enemies killed, can loot the evolution points.";
 
       /// Se morreu, habilita botão se saquear
 
