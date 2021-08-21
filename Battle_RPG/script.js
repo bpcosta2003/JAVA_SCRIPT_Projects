@@ -108,7 +108,7 @@ function Inimigo(nome, vida, dano) {
 var inimigos = [];
 
 function criarInimigos() {
-  var orc = new Inimigo("orc", 20, 30);
+  var orc = new Inimigo("Orc", 20, 30);
   var orcShaman = new Inimigo("Orc Shaman", 20, 30);
   var orcChefe = new Inimigo("Orc Chefe", 50, 10);
   var orcs = [orc, orcShaman, orcChefe];

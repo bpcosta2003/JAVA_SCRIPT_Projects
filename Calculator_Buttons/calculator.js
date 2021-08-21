@@ -16,7 +16,7 @@ function aleatorio() {
   htmlInputs +=
     "<input id='input2num' style='margin: auto' placeholder='Put the second value ...'><br><br>";
   htmlInputs +=
-    "<button id='buttonNum' style='margin: auto' onclick='resultadoAleatorio()'>GERAR NÚMERO<br>";
+    "<button id='buttonNum' style='margin: auto' onclick='resultadoAleatorio()'>GENERATE NUMBER<br>";
   document.getElementById("inputs").innerHTML = htmlInputs;
 }
 
