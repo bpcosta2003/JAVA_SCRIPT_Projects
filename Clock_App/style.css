@@ -10,11 +10,33 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgb(0, 29, 56);
+  background: rgb(0, 10, 19);
   min-height: 100vh;
 }
 
-/* * Content */
+/* % Content */
+
+/* * Icons */
+
+.icons {
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  transition: color 0.3s;
+}
+
+.icons i {
+  margin: 1rem;
+}
+
+i:hover {
+  transition: color 0.3s;
+  color: rgb(0, 255, 157);
+  cursor: pointer;
+}
+
+/* * Cronometro */
 
 .glass {
   border-radius: 20px;
@@ -23,12 +45,15 @@ body {
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
   transition: padding 1s;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), inset 0 -5px 5px rgba(0, 0, 0, 0.1),
+    0 10px 15px rgba(0, 0, 0, 0.1);
 }
+
 .glass:hover {
   padding: 5rem;
 }
 
-.card {
+.opcs {
   border: 0;
   text-align: center;
   border-radius: 10px;
@@ -36,11 +61,12 @@ body {
   border: 1px solid transparent;
   padding: 2em;
   backdrop-filter: blur(15px);
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), inset 0 -5px 5px rgba(0, 0, 0, 0.1),
+    0 10px 15px rgba(0, 0, 0, 0.1);
   display: block;
   transition: padding 2s;
 }
-.card:hover {
+.opcs:hover {
   padding: 2em 10em;
   transition: padding 1s;
 }
@@ -77,4 +103,30 @@ body {
 span i {
   font-size: 36px;
   color: rgb(255, 255, 255);
+}
+
+#hour {
+  padding: 0.5em;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), inset 0 -5px 5px rgba(0, 0, 0, 0.1),
+    0 10px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+#min {
+  padding: 0.5em;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), inset 0 -5px 5px rgba(0, 0, 0, 0.1),
+    0 10px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+#sec {
+  padding: 0.5em;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), inset 0 -5px 5px rgba(0, 0, 0, 0.1),
+    0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* *horaAtual */
+
+.horaAtual {
+  color: white;
+  text-align: center;
 }

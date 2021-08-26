@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://www.pngkey.com/png/full/871-8710663_apple-watch-png-apple-watch-icon-png.png"
+    />
     <title>Clock - App</title>
 
     <!-- * Bootstrap -->
@@ -35,7 +39,12 @@
   </head>
   <body>
     <div class="glass">
-      <div class="card">
+      <div class="icons">
+        <i onclick="cronometro()" class="bi bi-hourglass-top"></i>
+        <i class="bi bi-alarm-fill"></i>
+        <i onclick="relogio()" class="bi bi-clock-fill"></i>
+      </div>
+      <div class="opcs">
         <div class="time">
           <h1 id="hour">00</h1>
           <h1>.</h1>
@@ -45,11 +54,12 @@
         </div>
         <div class="botaoStart">
           <span
-            ><button onClick="play()">
+            ><button class="btn" onClick="play()">
               <i id="playBtn" class="bi bi-play-fill"></i></button
           ></span>
           <span
-            ><button onclick="reset()"><i class="bi bi-x"></i></button
+            ><button class="btn" id="resetBtn" onclick="reset()">
+              <i class="bi bi-x"></i></button
           ></span>
         </div>
       </div>

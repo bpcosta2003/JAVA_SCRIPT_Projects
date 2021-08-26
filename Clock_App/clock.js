@@ -20,6 +20,33 @@ function play() {
   pause = !pause;
 }
 
+function relogio() {
+  clearInterval(timer);
+  timer = setInterval(attHora, 1000);
+}
+
+function cronometro() {
+  pause = true;
+  clearInterval(timer);
+  $("#playBtn").addClass("bi-play-fill");
+  hora = 0;
+  min = 0;
+  sec = 0;
+  $(".btn").prop("disabled", false);
+  changeView();
+}
+
+function attHora() {
+  var data = new Date();
+  hora = data.getHours();
+  min = data.getMinutes();
+  sec = data.getSeconds();
+
+  $(".btn").prop("disabled", true);
+
+  changeView();
+}
+
 function timerCron() {
   sec++;
   if (sec == 60) {
@@ -32,6 +59,10 @@ function timerCron() {
     hora++;
   }
 
+  changeView();
+}
+
+function changeView() {
   if (sec < 10) {
     $("#sec").html("0" + sec);
   } else {
@@ -43,7 +74,6 @@ function timerCron() {
   } else {
     $("#min").html(min);
   }
-
   if (hora < 10) {
     $("#hour").html("0" + hora);
   } else {
@@ -52,6 +82,7 @@ function timerCron() {
 }
 
 function reset() {
+  pause = true;
   clearInterval(timer);
   $("#playBtn").addClass("bi-play-fill");
   $("#playBtn").removeClass("bi-pause");
