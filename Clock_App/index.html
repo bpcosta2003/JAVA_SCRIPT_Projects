@@ -40,8 +40,8 @@
   <body>
     <div class="glass">
       <div class="icons">
-        <i onclick="cronometro()" class="bi bi-hourglass-top"></i>
-        <i class="bi bi-alarm-fill"></i>
+        <i onclick="cronometro()" class="bi bi-hourglass-top active"></i>
+        <i id="alarm" onclick="alarme()" class="bi bi-alarm-fill"></i>
         <i onclick="relogio()" class="bi bi-clock-fill"></i>
       </div>
       <div class="opcs">
@@ -54,7 +54,7 @@
         </div>
         <div class="botaoStart">
           <span
-            ><button class="btn" onClick="play()">
+            ><button class="btn" onclick="play()">
               <i id="playBtn" class="bi bi-play-fill"></i></button
           ></span>
           <span

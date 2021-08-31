@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+::selection {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -34,6 +38,9 @@ i:hover {
   transition: color 0.3s;
   color: rgb(0, 255, 157);
   cursor: pointer;
+}
+.active {
+  color: rgb(0, 255, 157);
 }
 
 /* * Cronometro */
@@ -124,9 +131,36 @@ span i {
     0 10px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* *horaAtual */
+/* *Alarme */
 
-.horaAtual {
-  color: white;
+input[type="number"] {
+  width: 5em;
+  height: 2.5em;
+  padding: 12px 20px;
+  margin: 0px 0;
+  box-sizing: border-box;
+  font-size: 2em;
   text-align: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), inset 0 -5px 5px rgba(0, 0, 0, 0.1),
+    0 10px 15px rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0);
+  border-radius: 15px;
+  border: 0px solid transparent;
+  color: white;
+  transition: 0.3s;
+}
+
+input[type="number"]:focus {
+  background-color: rgba(255, 255, 255, 0.096);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), inset 0 -5px 5px rgba(0, 0, 0, 0.1),
+    0 10px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  border: 1px solid transparent;
+  outline: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  margin: -2px;
+  padding: 10px;
 }
