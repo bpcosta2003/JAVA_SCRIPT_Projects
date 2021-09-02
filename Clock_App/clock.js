@@ -34,6 +34,7 @@ function play() {
 }
 
 function relogio() {
+  $(".btn").prop("disabled", true);
   screen();
   $(".bi-clock-fill").addClass("active");
   $(".bi-hourglass-top").removeClass("active");
@@ -43,6 +44,7 @@ function relogio() {
 }
 
 function cronometro() {
+  $(".btn").prop("disabled", false);
   screen();
   $(".bi-hourglass-top").addClass("active");
   $(".bi-alarm-fill").removeClass("active");
@@ -53,18 +55,15 @@ function cronometro() {
   hora = 0;
   min = 0;
   sec = 0;
-  $(".btn").prop("disabled", false);
   changeView();
 }
 
 function attHora() {
+  $(".btn").prop("disabled", true);
   var data = new Date();
   hora = data.getHours();
   min = data.getMinutes();
   sec = data.getSeconds();
-
-  $(".btn").prop("disabled", true);
-
   changeView();
 }
 
@@ -127,6 +126,7 @@ function reset() {
 //@  Alarme
 
 function alarme() {
+  $(".btn").prop("disabled", false);
   $(".bi-alarm-fill").addClass("active");
   $(".bi-clock-fill").removeClass("active");
   $(".bi-hourglass-top").removeClass("active");
@@ -146,7 +146,7 @@ function alarme() {
 
 function timerAlarme() {
   if (hora == 0 && min == 0 && sec == 0) {
-    alert("Terminou o Alarme !");
+    new Audio("Audio/that-was-quick-606.ogg").play();
     clearInterval(timer);
     return;
   }
