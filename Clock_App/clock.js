@@ -148,6 +148,7 @@ function timerAlarme() {
   if (hora == 0 && min == 0 && sec == 0) {
     new Audio("Audio/that-was-quick-606.ogg").play();
     clearInterval(timer);
+    $("#sec").val("00");
     return;
   }
 
