@@ -8,7 +8,7 @@ var pause = false;
 
 pause = !pause;
 
-// Cronometro e Relogio
+//@ Cronometro e Relogio
 
 function play() {
   var alarmePlay = document.getElementById("alarm").className;
@@ -34,6 +34,7 @@ function play() {
 }
 
 function relogio() {
+  screen();
   $(".bi-clock-fill").addClass("active");
   $(".bi-hourglass-top").removeClass("active");
   $(".bi-alarm-fill").removeClass("active");
@@ -42,6 +43,7 @@ function relogio() {
 }
 
 function cronometro() {
+  screen();
   $(".bi-hourglass-top").addClass("active");
   $(".bi-alarm-fill").removeClass("active");
   $(".bi-clock-fill").removeClass("active");
@@ -122,7 +124,7 @@ function reset() {
   }
 }
 
-//  Alarme
+//@  Alarme
 
 function alarme() {
   $(".bi-alarm-fill").addClass("active");
@@ -177,4 +179,16 @@ function timerAlarme() {
   }
 
   sec--;
+}
+
+function screen() {
+  var html = `<div class="time">
+     <h1 id="hour">00</h1>
+     <h1>.</h1>
+     <h1 id="min">00</h1>
+     <h1>.</h1>
+     <h1 id="sec">00</h1>
+  </div>`;
+
+  $(".time").html(html);
 }
