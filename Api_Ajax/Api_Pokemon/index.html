@@ -15,37 +15,50 @@
   </head>
 
   <body>
-    <h2>API - Pokemon</h2>
+    <div class="container">
+      <div class="box">
+        <h2>API - Pokemon</h2>
+        <div class="sect">
+          <section>
+            <div class="btn">
+              <button id="botaoBuscarPersonagemAleatorio">
+                Get random POKEMON
+              </button>
+              <h3>Chosen Pokemon <label id="personagemAleatorioId"></label></h3>
+              <h3>DEFAULT / SHINY</h3>
+              <div id="personagemImgId"></div>
+            </div>
+          </section>
+          <section>
+            <div class="btn">
+              <button id="botaoBuscaPokemonId">Get POKEMON by name</button>
+              <input
+                id="buscaPokemonPorNomePersonagemId"
+                placeholder="Pokemon's name :"
+              />
 
-    <div class="btn">
-      <button id="botaoBuscarPersonagemAleatorio">Get random POKEMON</button>
-      <h3>Chosen Pokemon : <label id="personagemAleatorioId"></label></h3>
-      <h3>DEFAULT / SHINY</h3>
-      <div id="personagemImgId"></div>
+              <h3 class="h3txt">
+                POKEMON : <label id="labelPokemonDeId"></label>
+              </h3>
+
+              <div id="personagemImgId2"></div>
+            </div>
+          </section>
+        </div>
+
+        <div class="tabelas">
+          <table id="tabelaPokemonId">
+            <tr>
+              <th>HP</th>
+              <th>ATTACK</th>
+              <th>DEFENSE</th>
+              <th>SPECIAL ATTACK</th>
+              <th>SPECIAL DEFENSE</th>
+              <th>SPEED</th>
+            </tr>
+          </table>
+        </div>
+      </div>
     </div>
-
-    <div class="btn">
-      <input id="buscaPokemonPorNomePersonagemId" />
-      <button id="botaoBuscaPokemonId">Get POKEMON by name</button>
-
-      <h3 class="h3txt">POKEMON : <label id="labelPokemonDeId"></label></h3>
-
-      <div id="personagemImgId2"></div>
-    </div>
-
-    <div class="tabelas">
-      <table id="tabelaPokemonId" border="1">
-        <tr>
-          <th>HP</th>
-          <th>ATTACK</th>
-          <th>DEFENSE</th>
-          <th>SPECIAL ATTACK</th>
-          <th>SPECIAL DEFENSE</th>
-          <th>SPEED</th>
-        </tr>
-      </table>
-    </div>
-    <br />
-    <br />
   </body>
 </html>
