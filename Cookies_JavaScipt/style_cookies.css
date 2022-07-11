@@ -8,10 +8,26 @@ body {
   text-align: center;
 }
 
-h2 {
-  padding: 2rem;
-}
-
 .form-check {
   text-align: right;
+}
+
+.containerFlex {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid black;
+}
+
+.container2Flex {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.container2Flex select {
+  width: 100%;
 }
